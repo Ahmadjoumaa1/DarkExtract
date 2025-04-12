@@ -7,7 +7,8 @@
 
 ---
 
-🚀 Features
+Features
+==
 
 ✅ **Automated dark web crawling**  
 ✅ **Content and link extraction from multiple elements**  
@@ -20,8 +21,8 @@
 
 ---
 
- 📦 Requirements
-
+Requirements
+==
 Install dependencies with:
 --
 *****************************************************
