@@ -24,10 +24,11 @@
 
 Install dependencies with:
 --
+*****************************************************
 bash
 pip install -r requirements.txt + Tor
 --
-
+*****************************************************
 How to use ?
 *****************************************************
 Python3 DarkEctract.py 
