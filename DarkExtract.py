@@ -28,10 +28,10 @@ import random
 from colorama import Fore, Style, init
 from datetime import datetime
 
-# Initialize colorama
+
 init(autoreset=True)
 
-# List of darknet sites from a user-supplied file
+
 def get_darknet_sites_from_file(file_path):
     sites = []
     try:
@@ -51,25 +51,25 @@ headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
 }
 
-# Proxy settings to route through Tor via SOCKS5
+# Proxy 
 proxies = {
     "http": "socks5h://127.0.0.1:9050",
     "https": "socks5h://127.0.0.1:9050"
 }
 
-# File to store the results
+# results
 output_file = "darknet_leaks.txt"
 
 def scrape_leaks(site):
     try:
         print(Fore.CYAN + f"Visiting {site}...")
         response = requests.get(site, headers=headers, proxies=proxies, timeout=15)
-        response.raise_for_status()  # Check if the request was successful
+        response.raise_for_status()  
         
         soup = BeautifulSoup(response.text, "html.parser")
         leak_data = []
         
-        # Extract links and text from relevant elements
+        # Extract elements
         for element in soup.find_all(["a", "p", "pre", "code"]):
             if element.text.strip():
                 leak_data.append(element.text.strip())
@@ -84,14 +84,14 @@ def scrape_leaks(site):
 
 def save_leaks(leaks, site):
     with open(output_file, "a", encoding="utf-8") as f:
-        # Add site URL and timestamp
+        
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         f.write(f"\n{'='*50}\n")
         f.write(f"Site: {site}\n")
         f.write(f"Timestamp: {timestamp}\n")
         f.write(f"{'='*50}\n")
         
-        # Add the leak data
+        
         for leak in leaks:
             f.write(f"{leak}\n")
         
@@ -107,7 +107,7 @@ def main():
         return
     
     if os.path.exists(output_file):
-        os.remove(output_file)  # Clean slate if output file exists
+        os.remove(output_file)  
     
     # Loop through each site and scrape it
     for i, site in enumerate(darknet_sites, 1):
