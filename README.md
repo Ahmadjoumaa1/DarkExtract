@@ -29,22 +29,22 @@ Make sure you have the following installed:
 ```bash
 sudo apt update && sudo apt install tor python3-pip
 pip3 install requests beautifulsoup4
-
+```
 ## 🚀 How to Use
 
 1. **Install Tor** (if not already installed):
 
-```
+```bash
 sudo apt update
 sudo apt install tor -y
 install requirements.txt
 ```
-```bash
+
 ## How to Run
 Python3 DarkEctract.py
 *************************************************
 Enter your txt file which contains dark web links ✅
-```
+
 
 
 
