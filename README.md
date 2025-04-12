@@ -34,11 +34,12 @@ pip3 install requests beautifulsoup4
 
 1. **Install Tor** (if not already installed):
 
-```bash
+```
 sudo apt update
 sudo apt install tor -y
 install requirements.txt
-*************************************************
+```
+```bash
 ## How to Run
 Python3 DarkEctract.py
 *************************************************
