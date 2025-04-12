@@ -25,5 +25,9 @@
 Install dependencies with:
 --
 bash
-pip install -r requirements.txt
+pip install -r requirements.txt + Tor
 --
+How to use ?
+Python3 DarkEctract.py 
++++
+Enter your txt file Which contains dark web links
