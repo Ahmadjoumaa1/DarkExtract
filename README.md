@@ -37,6 +37,14 @@ pip3 install requests beautifulsoup4
 ```bash
 sudo apt update
 sudo apt install tor -y
+install requirements.txt
+*************************************************
+## How to Run
+Python3 DarkEctract.py
+*************************************************
+Enter your txt file which contains dark web links ✅
+```
+
 
 
 ██████╗  █████╗ ██████╗ ██╗  ██╗███████╗██╗  ██╗████████╗██████╗  █████╗  ██████╗████████╗
