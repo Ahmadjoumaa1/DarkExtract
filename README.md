@@ -7,22 +7,23 @@
 
 ---
 
-##🚀 Features
+🚀 Features
 
-###✅ **Automated dark web crawling**  
-###✅ **Content and link extraction from multiple elements**  
-###✅ **Randomized request delays to reduce detection**  
-###✅ **Formatted and clean output file**  
-###✅ **User input for a .txt list of .onion targets**  
-###✅ **Progress display: shows which link is being analyzed**  
-###✅ **Stylish terminal output with color highlights**  
-###✅ **Safe operation — does *not* open sites in browser**  
+✅ **Automated dark web crawling**  
+✅ **Content and link extraction from multiple elements**  
+✅ **Randomized request delays to reduce detection**  
+✅ **Formatted and clean output file**  
+✅ **User input for a .txt list of .onion targets**  
+✅ **Progress display: shows which link is being analyzed**  
+✅ **Stylish terminal output with color highlights**  
+✅ **Safe operation — does *not* open sites in browser**  
 
 ---
 
- #📦 Requirements
+ 📦 Requirements
 
-##Install dependencies with:
-
-###```bash
-###pip install -r requirements.txt
+Install dependencies with:
+--
+bash
+pip install -r requirements.txt
+--
