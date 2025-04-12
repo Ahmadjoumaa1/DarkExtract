@@ -1,7 +1,7 @@
 
  # What is darkExtract?
  
-##`darkExtract` is a powerful open-source Python tool designed for **extracting leaked data** and valuable text-based intelligence from **.onion** dark web domains without requiring the user to browse those domains directly.
+`darkExtract` is a powerful open-source Python tool designed for **extracting leaked data** and valuable text-based intelligence from **.onion** dark web domains without requiring the user to browse those domains directly.
 ===
 🧪 It automatically connects through the Tor network, scrapes text content and links from selected elements (`<a>`, `<p>`, `<pre>`, `<code>`), and saves clean, structured results for further analysis.
 
